@@ -1,0 +1,6 @@
+{
+  "Document": { "prefix": "nsdxn", "body": ["${1:Root}", "/${2:name}=<${3:text}>", "$0"], "description": "Root and protected text field" },
+  "Table": { "prefix": "nsdxn-table", "body": ["${1:Users}#${2:id}+${3:name}", "/${4:1}+<${5:Kani}>", "$0"], "description": "Explicit two-column table" },
+  "Raw literal": { "prefix": "nsdxn-raw", "body": ["/${1:body}=<|", "$0", "|>"], "description": "Multiline raw text field" },
+  "Continuation": { "prefix": "nsdxn-continue", "body": "/+${1:key}=<${2:value}>$0", "description": "Continue the immediately preceding record" }
+}

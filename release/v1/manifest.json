@@ -1,0 +1,35 @@
+{
+  "name": "NiraiNuval NSDXN parser",
+  "version": "v1.0.0",
+  "platform": "windows-x64",
+  "implementation_language": "Aingnyazhi",
+  "package_type": "self-contained-executable",
+  "production_ready": false,
+  "files": [
+    {
+      "path": "nsdxn-v1-windows-x64.exe",
+      "bytes": 96768,
+      "sha256": "C531F4B0EC2A87A583AE97FC0E453643A0864C29E7BF18285871CAF6824E12FB"
+    },
+    {
+      "path": "NiraiNuval_NSDXN_v4.md",
+      "bytes": 37177,
+      "sha256": "BAD2602AFB630BBCC6E1DD69F1CE75A9BD9F45B6812CAFE5607F9546F2631182"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1081,
+      "sha256": "DFB78F1A178D8A11101E9499746A24DB34CC094A022A0BC02FD52492531952EA"
+    },
+    {
+      "path": "README.md",
+      "bytes": 449,
+      "sha256": "422C521076E6EDF4761A90FDF2850A0569B7E3F3C2667EC209FCDEC3A3A74593"
+    },
+    {
+      "path": "VERSION_NOTES.md",
+      "bytes": 1267,
+      "sha256": "03E459B7FE65ED1EAEE1400B67DD6CC27027790B5EB1167488D039C7238E6641"
+    }
+  ]
+}

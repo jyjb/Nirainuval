@@ -1,0 +1,4 @@
+Users#id+details(any)#
+/1
+//details#qty(number)+flag
+///2+true

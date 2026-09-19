@@ -1,0 +1,45 @@
+{
+  "name": "NiraiNuval NSDXN",
+  "scopeName": "source.nsdxn",
+  "patterns": [
+    { "name": "comment.line.tilde.nsdxn", "match": "^\\s*~.*$" },
+    { "include": "#raw" },
+    { "include": "#literal" },
+    { "include": "#expression" },
+    { "include": "#escape" },
+    { "name": "entity.name.tag.nsdxn", "match": "(?:^[\\t ]*|(?<=/))[\\p{L}\\p{N}_][\\p{L}\\p{M}\\p{N}_]*(?=[\\t ]*(?:$|[?#(]))" },
+    { "name": "variable.other.member.nsdxn", "match": "[\\p{L}\\p{N}_][\\p{L}\\p{M}\\p{N}_]*(?=[\\t ]*=)" },
+    { "name": "storage.type.nsdxn", "match": "\\((?:number|text|bool|date|time|datetime|any)\\)" },
+    { "name": "keyword.operator.nsdxn", "match": "[/=+#?]" },
+    { "include": "#scalar" }
+  ],
+  "repository": {
+    "escape": { "name": "constant.character.escape.nsdxn", "match": "\\|." },
+    "raw": {
+      "name": "string.quoted.other.raw.nsdxn",
+      "begin": "<\\|", "end": "\\|>",
+      "patterns": [{ "name": "constant.character.escape.nsdxn", "match": "\\|\\|>" }]
+    },
+    "literal": {
+      "name": "string.quoted.other.nsdxn",
+      "begin": "<", "end": ">",
+      "patterns": [{ "include": "#escape" }]
+    },
+    "expression": {
+      "name": "meta.expression.nsdxn",
+      "begin": "\\{", "end": "\\}",
+      "patterns": [
+        { "include": "#raw" }, { "include": "#literal" },
+        { "include": "#expression" },
+        { "name": "keyword.operator.logical.nsdxn", "match": "&&|\\|\\|" },
+        { "include": "#escape" }, { "include": "#scalar" }
+      ]
+    },
+    "scalar": {
+      "patterns": [
+        { "name": "constant.language.nsdxn", "match": "(?<=[=+\\[\\s{&|])(?:true|false|null)(?=[+}/\\]\\s&|]|$)" },
+        { "name": "constant.numeric.nsdxn", "match": "(?<=[=+\\[\\s{&|])-?(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?=[+}/\\]\\s&|]|$)" }
+      ]
+    }
+  }
+}

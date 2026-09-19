@@ -1,0 +1,3 @@
+# ── Build output (all compiled artifacts go here — never commit) ──────────────
+build_test/*
+*.copi

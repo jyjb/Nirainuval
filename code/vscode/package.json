@@ -1,0 +1,20 @@
+{
+  "name": "nirainuval-nsdxn",
+  "displayName": "NiraiNuval NSDXN (Experimental)",
+  "description": "Declarative NSDXN syntax highlighting and snippets.",
+  "version": "0.3.1",
+  "publisher": "findj",
+  "license": "MIT",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Programming Languages", "Snippets"],
+  "contributes": {
+    "languages": [{
+      "id": "nsdxn",
+      "aliases": ["NiraiNuval", "NSDXN", "நிறைநுவல்"],
+      "extensions": [".nsdxn", ".நு", ".நுவல்"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{ "language": "nsdxn", "scopeName": "source.nsdxn", "path": "./syntaxes/nsdxn.tmLanguage.json" }],
+    "snippets": [{ "language": "nsdxn", "path": "./snippets/nsdxn.json" }]
+  }
+}
