@@ -62,8 +62,8 @@ A NiraiNuval document can express structured information without repeatedly rest
 ```text
 base=all
 /group=hotmail
-//id=<M!X0fEd!0t5inT0wn>+name=findjeyraj@hotmail.com+tag=[github,gitlab]
-//id=<M!X0fEd!0t5inT0wn>+name=jeyraj.jeyraj@hotmail.com+tag=[mail]
+//id=<Some wide open Text>+name=findjeyraj@hotmail.com+tag=[github,gitlab]
+//id=<Some wide open Text>+name=jeyraj.jeyraj@hotmail.com+tag=[mail]
 ```
 
 Here, the notation communicates hierarchy, identity, attributes, and collections through a compact structural vocabulary.
